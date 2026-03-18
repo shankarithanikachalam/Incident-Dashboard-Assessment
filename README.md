@@ -1,59 +1,59 @@
-# Frontend Engineering Task – Incident Dashboard
-# 🚨 Incident Dashboard – Frontend Engineering Challenge
+# Incident-Dashboard-Assessment
 
-## Mission Statement
+## Overview
 
-**Build a production-ready incident management dashboard that engineering teams can trust.**
-
-You're joining a critical infrastructure team where incident response matters. This dashboard is the command center for engineers monitoring system health, identifying issues, and responding to production problems in real-time.
-
-Your mission: Take this unstable prototype and transform it into a robust, performant, and accessible application that can handle hundreds of incidents without breaking, while providing an intuitive experience for stressed engineers at 3 AM.
-
-This is your opportunity to demonstrate:
-- 🎯 **Technical Excellence** – Clean architecture, proper state management, and Angular best practices
-- 🐛 **Problem-Solving** – Debug hidden issues, fix edge cases, and handle null/undefined gracefully
-- ⚡ **Performance Awareness** – Optimize rendering, implement smart caching, and eliminate bottlenecks
-- ♿ **Accessibility First** – Build for all users, keyboard navigation, and screen readers
-- 🧪 **Quality Assurance** – Test what matters, catch regressions early
-
-The current implementation is intentionally flawed. Your task is to improve the architecture, fix the bugs, and add critical features that make this dashboard production-worthy.
-
-**Estimated time: 6–8 hours** | **Make it beautiful. Make it work. Make it yours.**
+A production-style Incident Management Dashboard built to provide reliable monitoring and quick response to system issues.
 
 ---
 
-## Your Tasks
+## Key Improvements
 
-### 1. Fix Data Loading
-The application has issues with state management and data loading. Identify and fix all problems.
-
-### 2. Implement Data Normalisation
-The API returns inconsistent data. Create proper normalisation logic to ensure data quality and consistency.
-
-### 3. Fix Filtering
-The filtering functionality is broken. Make severity and text search filters work correctly.
-
-### 4. Optimize Performance
-The list re-renders unnecessarily. Implement proper change detection and tracking.
-
-### 5. Add Incident Details Panel
-Build a details panel that opens when clicking an incident. Include close functionality (button + ESC key).
-
-### 6. Ensure Accessibility
-Make the application keyboard navigable with proper focus management and ARIA attributes.
-
-### 7. Write Tests
-Add 3–5 meaningful tests covering core functionality.
-
+* Replaced unstable mock API with a **consistent in-memory data model**
+* Implemented **auto-refresh (polling)** for near real-time updates
+* Fixed **filtering logic** (search + severity)
+* Resolved **state persistence issues** in Zustand
+* Added proper **loading and error handling**
 
 ---
 
-## Getting started
+## Testing
 
-```bash
-npm install
-npm run dev   # start dev server
-npm test      # run tests
-```
+Basic behavior-focused tests using React Testing Library and Vitest:
 
-You may adjust scripts or add small utilities if it helps your workflow.
+* Rendering
+* User interactions
+* State updates
+
+> Currently learning testing; with more time, I would expand coverage and add integration tests.
+
+---
+
+## AI Usage
+
+AI tools (ChatGPT) were used only for:
+
+* Clarifying concepts (state management, testing basics)
+* Debugging errors and understanding issues
+* Small guidance on test structure
+
+All core implementation, logic decisions, and architecture were written and understood by me.
+
+---
+
+## Future Scope
+
+* Real-time updates using WebSockets
+* Performance improvements for large datasets
+* Enhanced test coverage
+
+---
+
+## Tech Stack
+
+React, TypeScript, Zustand, React Router, Vitest
+
+---
+
+## Summary
+
+Improved the application to be **stable, predictable, and closer to production-ready**, with clean state management and reliable UI behavior.
