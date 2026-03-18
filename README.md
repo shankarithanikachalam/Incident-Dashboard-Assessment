@@ -1,7 +1,5 @@
 # Incident-Dashboard-Assessment
 
-# Incident Management Dashboard
-
 ## Overview
 
 A production-style Incident Management Dashboard built to provide reliable monitoring and quick response to system issues.
